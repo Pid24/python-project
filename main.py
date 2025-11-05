@@ -1,17 +1,20 @@
-# age = int(input("Enter ur age: "))
+# Python calculator
 
-# if age >= 100:
-#     print("U are too old to signed up!")
-# elif age >= 18:
-#     print("Ur are now signed up!")
-# elif age < 0:
-#     print("U haven't been born yet!")
-# else:
-#     print("U must be 18+ to signed up!")
+operator = input("Enter an operator (+ - * /): ")
+num1 = float(input("Enter the 1st number: "))
+num2 = float(input("Enter the 2nd number: "))
 
-response = input("Would u like food? (Y/N): ")
-
-if response == "Y":
-    print("Have some food!")
+if operator == "+":
+    result = num1 + num2
+    print(round(result, 3))
+elif operator == "-":
+    result = num1 - num2
+    print(round(result, 3))
+elif operator == "*":
+    result = num1 * num2
+    print(round(result, 3))
+elif operator == "/":
+    result = num1 / num2
+    print(round(result, 3))
 else:
-    print("No food for u")
+    print(f"{operator} is not valid")
